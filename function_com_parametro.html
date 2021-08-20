@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase){/*Tudo que estiver dentro de frase. Que é o que esta dentro
+        mostra, sera renderisado pelo console*/
+
+        document.write(frase);
+        pulaLinha();//coloquei o parametro de uma funçao dentro de outra função
+    }
+
+    var ano = 2021
+    mostra ("linda tem " + (ano - 2009) + " anos.");
+   
+    mostra ("Guaraciara tem " + (ano - 2006) + " anos.");
+    
+    mostra ("pérola tem " + (ano - 2008) + " anos.");
+    
+
+    let idadeLinda = 12
+    let idadeGuaraciara = 15
+    let idadePerola = 13
+    var media = ((idadeLinda + idadeGuaraciara + idadePerola) / 3);
+    pulaLinha();
+    document.write("A média de idades entre elas é: " + Math.round(media));
+   
+</script>
