@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<h1>Jeito mais estensso de faser esse codigo abaixo...</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+var pesoEdson = 90;
+var alturaEdson = 1.70;
+var imcEdson = pesoEdson / (alturaEdson * alturaEdson);
+mostra ("O imc de Edson é " + imcEdson);
+
+var pesoGi = 75;
+var alturaGi = 1.65;
+var imcGi = pesoGi / (alturaGi * alturaGi);
+mostra ("O imc de Gi é " + imcGi);
+
+        </script>
+        <hr>
+        <h1>Jeito mais reduzido passando dois parametros para a funtion..</h1>
+
+        <script>
+            function pulaLinha() {
+                document.write("<br>");
+            }
+    
+            function mostra(frase) {
+                document.write(frase);
+                pulaLinha();
+            }
+            function calculaImc(peso, altura){
+                var imc = peso / (altura * altura);
+                mostra("o imc calculado  foi: " + imc);
+            }
+ 
+    calculaImc(90, 1.70);
+   
+    calculaImc(75, 1.65);
+ 
+    
+    
+            </script>
