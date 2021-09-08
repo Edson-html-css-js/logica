@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<h1>Jeito mais estensso de faser esse codigo abaixo...</h1>
+<h1>Jeito mais extenso de faser esse codigo abaixo...</h1>
     <script>
         function pulaLinha() {
             document.write("<br>");
@@ -26,7 +26,7 @@ mostra ("O imc de Gi é " + imcGi);
 
         <script>
             function pulaLinha() {
-                document.write("<br>");
+                document.write("<br><br>");
             }
     
             function mostra(frase) {
@@ -36,12 +36,31 @@ mostra ("O imc de Gi é " + imcGi);
             function calculaImc(peso, altura){
                 var imc = peso / (altura * altura);
                 mostra("o imc calculado  foi: " + imc);
+                return imc;
             }
- 
-    calculaImc(90, 1.70);
-   
-    calculaImc(75, 1.65);
- 
+             
+            calculaImc (80, 160);
+            calculaImc (90, 170); 
     
     
+            </script>
+            <h1>------------------------------------------------------------------------</h1>
+
+            <script>
+
+                function pulaLinha(){
+                    document.write("<br>");
+                }
+         function calculaImc(peso, altura){
+
+           return  peso / (altura * altura);
+      
+         }
+
+var totalImc =  calculaImc(90, 170)  +  calculaImc (70, 160);
+
+        document.write("As somas dos IMC'S é  " + totalImc );
+        // pulaLinha()
+        // document.write("O imc de gisleine e " +);
+
             </script>

@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+function pulaLinha() {
+    document.write("<br> <br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var limite = 40;
+var numero = 30;
+
+
+
+// repita 
+while(numero <= limite){
+
+    mostra("mostrando numeros " + numero);
+numero = numero + 1;
+
+if(numero === 33){
+    mostra("");
+
+}if(numero === 37){
+    mostra("");
+}
+
+}
+
+mostra('FIM');
+
+</script>

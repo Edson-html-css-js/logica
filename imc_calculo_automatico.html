@@ -1,0 +1,63 @@
+ <meta charset="UTF-8">
+
+<script>
+function pulaLinha() {
+    document.write("<br> <br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calculaImc(altura, peso) {
+    return peso / (altura * altura);
+}
+var nome = prompt(" Informe seu nome!");
+var alturaInformada = prompt( nome +" Informe sua altura");
+var pesoInformado = prompt(nome +" Informe seu peso");
+var imc = calculaImc(alturaInformada, pesoInformado);
+mostra( nome+ " O seu IMC é " + imc); 
+
+if(imc < 18.5){
+    mostra("Você esta acimado do recomendado pela OMS! ");
+}
+
+if(imc > 35) {
+    mostra("Você esta acima do recomendado pela oms!");
+}
+// se for maior ou = a 18,.5  ou menor ou = 35 - escreva 
+ if(imc >= 18.5 && imc <= 35) {
+
+        mostra("Seu IMC está exelente, parabens!");
+    
+}
+
+
+</script> 
+
+<!-- <meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostra(resultado);
+</script> -->
