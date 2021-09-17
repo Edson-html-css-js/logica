@@ -1,1 +1,1 @@
-# logica
+# CURSO DE LOGICA_1, NA ALURA!
